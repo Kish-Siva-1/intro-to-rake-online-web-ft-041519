@@ -18,8 +18,8 @@ task :console => :environment do
   Pry.start
 end
  
-namespace :greeting do 
-  task :hello do
+namespace :db do 
+  task :migrate do
     puts "hello from Rake!"
   end
   
