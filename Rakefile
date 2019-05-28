@@ -10,11 +10,14 @@ namespace :greeting do
   end
 end 
 
-task :environment do  
+task :environment do 
+  require_relative "./config/environment.rb" 
+end
+
 task :console => :environment do
   Pry.start
 end
-
+ 
 namespace :greeting do 
   task :hello do
     puts "hello from Rake!"
