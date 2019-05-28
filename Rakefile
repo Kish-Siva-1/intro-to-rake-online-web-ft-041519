@@ -20,10 +20,10 @@ end
  
 namespace :db do 
   task :migrate => :environment do
-    
+    Student. 
   end
   
-  task :hola do
+  task :seed =>  do
     puts "hola de Rake!"
   end
 end
