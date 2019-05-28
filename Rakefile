@@ -19,8 +19,8 @@ task :console => :environment do
 end
  
 namespace :db do 
-  task :migrate do
-    puts "hello from Rake!"
+  task :migrate => :environment do
+    
   end
   
   task :hola do
