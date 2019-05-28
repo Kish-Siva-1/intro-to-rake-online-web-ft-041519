@@ -20,10 +20,10 @@ end
  
 namespace :db do 
   task :migrate => :environment do
-    Student. 
+    Student.create_table
   end
   
-  task :seed =>  do
-    puts "hola de Rake!"
+  task :seed do
+    require_relative "./config/seeds.rb"
   end
 end
